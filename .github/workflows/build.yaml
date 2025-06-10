@@ -39,7 +39,6 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          target: production
           push: true
           tags: |
             ${{ github.repository }}:${{ env.RELEASE_VERSION }}
