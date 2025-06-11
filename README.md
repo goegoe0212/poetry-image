@@ -36,7 +36,6 @@ FROM python:3.13-slim
 
 # Poetry環境をコピー
 COPY --from=goegoe0212/poetry-image:latest /root/.local /root/.local
-COPY --from=goegoe0212/poetry-image:latest /root/.config /root/.config
 
 # Poetryのパスを追加
 ENV PATH="/root/.local/bin:${PATH}"
