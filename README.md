@@ -22,11 +22,10 @@ PythonプロジェクトのビルドやCI/CDパイプラインで、Poetryのセ
 
 ```Dockerfile
 COPY --from=goegoe0212/poetry-image:latest /root/.local /root/.local
-COPY --from=goegoe0212/poetry-image:latest /root/.config /root/.config
 ```
 
 - `goegoe0212/poetry-image:latest` は任意のバージョンタグ（例: `goegoe0212/poetry-image:2.1.3`）にも置き換え可能です。
-- `/root/.local` および `/root/.config` 配下にPoetry本体と設定ファイルが含まれています。
+- `/root/.local` 配下にPoetry本体が含まれています。
 
 ---
 
